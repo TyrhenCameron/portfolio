@@ -1,31 +1,27 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { gsap } from "gsap/gsap-core";
-import { useGSAP } from "@gsap/react";
 import styles from "./page.module.css";
 
 export default function Home() {
   const containerRef = useRef(null);
   const overlayRef = useRef(null);
   const nameRef = useRef(null);
-  const [showIntro, setShowIntro] = useState(false);
 
   useEffect(() => {
     const hasSeenIntro = sessionStorage.getItem("hasSeenIntro");
-    if (!hasSeenIntro) {
-      setShowIntro(true);
-      sessionStorage.setItem("hasSeenIntro", "true");
-    }
-  }, []);
 
-  useGSAP(() => {
-    if (!showIntro) {
+    if (hasSeenIntro) {
+      // Already seen - hide overlay immediately
       if (overlayRef.current) {
         overlayRef.current.style.display = "none";
       }
       return;
     }
+
+    // First visit - play animation
+    sessionStorage.setItem("hasSeenIntro", "true");
 
     const tl = gsap.timeline();
 
@@ -50,7 +46,11 @@ export default function Home() {
         }
       }
     }, "-=0.3");
-  }, { scope: containerRef, dependencies: [showIntro] });
+
+    return () => {
+      tl.kill();
+    };
+  }, []);
 
   return (
     <div className="page-content hero" ref={containerRef}>
