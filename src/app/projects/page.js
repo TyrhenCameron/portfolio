@@ -26,7 +26,7 @@ const projects = [
   {
     name: "ERIS - Chaos Lab",
     description: "Chaos engineering platform",
-    image: "/chaos-gremlin.png",
+    image: "/eris_logo.png",
     tech: ["Python", "Prometheus", "Grafana", "Docker"],
     github: "https://github.com/TyrhenCameron/eris-chaos-lab",
   },
