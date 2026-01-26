@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "ポートフォリオサイト",
+    "description": "タイレン・キャメロン - ソフトウェア / クラウドエンジニア"
+  },
+  "menu": {
+    "title": "タイレン・キャメロン - ソフトウェア / クラウドエンジニア",
+    "menuButton": "メニュー",
+    "closeButton": "閉じる",
+    "home": "ホーム",
+    "projects": "プロジェクト",
+    "contact": "お問い合わせ",
+    "email": "メール: tyrhencameron@gmail.com",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "home": {
+    "introName": "タイレン・キャメロン",
+    "introSubtitle": "ソフトウェア / クラウドエンジニア",
+    "aboutTitle": "自己紹介",
+    "sectionNumber": "01",
+    "bio": "日本語言語学のバックグラウンドを活かし、直感的なデジタル体験を作り出すユニークな視点を持っています。",
+    "bio2": "美しいデザインと堅牢なインフラの交差点に情熱を注いでいます。長く使えるきれいなものを作ることが好きです。現在、UI/UX、クラウドソリューション、カオスエンジニアリング、ネットワークセキュリティを探求中です。",
+    "bio3": "Le Wagonの卒業生で、",
+    "leWagonLink": "卒業制作は全Le Wagonキャンパスの中で最高のアプリの一つに選ばれました。",
+    "frontend": "フロントエンド",
+    "backend": "バックエンド",
+    "infrastructure": "インフラストラクチャ"
+  },
+  "projects": {
+    "title": "プロジェクト",
+    "sectionNumber": "02",
+    "viewOnGithub": "GitHub",
+    "softwareSection": "ソフトウェア",
+    "sreSection": "SRE / カオスエンジニアリング",
+    "items": {
+      "dreamhero": {
+        "name": "Dream Hero",
+        "description": "自分だけの冒険を選び、ストーリーが適応するキャラクターを挿入できるAIおやすみ物語アプリ。"
+      },
+      "kokai": {
+        "name": "Kokai Soundworks",
+        "description": "ミュージシャンがバンドを見つけ、ライブを資金調達し、会場を埋めるためのワンストッププラットフォーム。全Le Wagonキャンパスの中で最高のプロジェクトの一つに選ばれました。"
+      },
+      "kakehashi": {
+        "name": "Kakehashi Visa",
+        "description": "日本の入国管理弁護士と外国人がビザ取得のために協力しやすくするプラットフォーム。"
+      },
+      "eris": {
+        "name": "ERIS",
+        "description": "Dockerコンテナ、Prometheus監視、Grafanaダッシュボードを使用したローカルカオスエンジニアリングプラットフォーム。"
+      },
+      "nyx": {
+        "name": "NYX",
+        "description": "AWSサーバーレスカオスエンジニアリングプラットフォーム。S3にファイルをアップロードし、Lambdaが処理し、DynamoDBにメタデータを保存。障害を注入して何が起こるか観察。"
+      },
+      "hecate": {
+        "name": "HECATE",
+        "description": "AWS FISを使用してインフラの耐障害性をテストするカオスエンジニアリングプロジェクト。EC2上にFlaskアプリをオートスケーリングでデプロイし、セルフヒーリングを検証。"
+      }
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "sectionNumber": "03"
+  },
+  "about": {
+    "title": "自己紹介",
+    "sectionNumber": "03"
+  },
+  "languageSwitcher": {
+    "en": "EN",
+    "ja": "JA"
+  }
+}

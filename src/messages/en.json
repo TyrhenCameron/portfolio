@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Profile Website",
+    "description": "Tyrhen Cameron - Software / Cloud Engineer"
+  },
+  "menu": {
+    "title": "Tyrhen Cameron - Software / Cloud Engineer",
+    "menuButton": "Menu",
+    "closeButton": "Close",
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact",
+    "email": "Email: tyrhencameron@gmail.com",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "home": {
+    "introName": "Tyrhen Cameron",
+    "introSubtitle": "Software / Cloud Engineer",
+    "aboutTitle": "About me",
+    "sectionNumber": "01",
+    "bio": "Leveraging a background in Japanese linguistics to bring a unique perspective to crafting intuitive digital experiences.",
+    "bio2": "Passionate about the intersection of beautiful design and robust infrastructure, I like to make pretty things that are gonna work for a long time. Currently exploring UI/UX, cloud solutions, chaos engineering, and network security.",
+    "bio3": "I am a Le Wagon alumni whose",
+    "leWagonLink": "final project was voted one of the best apps from all Le Wagon campuses.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "infrastructure": "Infrastructure"
+  },
+  "projects": {
+    "title": "Projects",
+    "sectionNumber": "02",
+    "viewOnGithub": "GitHub",
+    "softwareSection": "Software",
+    "sreSection": "SRE / Chaos Engineering",
+    "items": {
+      "dreamhero": {
+        "name": "Dream Hero",
+        "description": "AI bedtime story app that allows you to choose your own adventure and insert your own characters that the story adapts around."
+      },
+      "kokai": {
+        "name": "Kokai Soundworks",
+        "description": "One-stop-platform for musicians to find bands, fund gigs, and fill venues. Voted one of the best projects out of all Le Wagon campuses."
+      },
+      "kakehashi": {
+        "name": "Kakehashi Visa",
+        "description": "A platform to make it easy for Japanese immigration lawyers to work together with foreign nationals in securing their visas."
+      },
+      "eris": {
+        "name": "ERIS",
+        "description": "Local chaos engineering platform with Docker containers, Prometheus monitoring, and Grafana dashboards for testing system resilience."
+      },
+      "nyx": {
+        "name": "NYX",
+        "description": "AWS serverless chaos engineering platform. Upload files to S3, Lambda processes them, stores metadata in DynamoDB. Inject failures and watch what happens."
+      },
+      "hecate": {
+        "name": "HECATE",
+        "description": "Chaos engineering project using AWS FIS to test infrastructure resilience. Deploys a Flask app on EC2 with auto scaling, then runs chaos experiments to verify self-healing."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "sectionNumber": "03"
+  },
+  "about": {
+    "title": "About",
+    "sectionNumber": "03"
+  },
+  "languageSwitcher": {
+    "en": "EN",
+    "ja": "JA"
+  }
+}

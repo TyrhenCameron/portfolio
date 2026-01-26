@@ -1,12 +1,17 @@
+"use client";
+
 import React from "react";
+import { useTranslations } from 'next-intl';
 import styles from "./contact.module.css";
 
-const Page = () => {
+export default function Page() {
+  const t = useTranslations('contact');
+
   return (
     <div className="page-content contact">
       <div className={styles.contactContainer}>
         <h1 className={styles.contactTitle}>
-          Contact<sup>(03)</sup>
+          {t('title')}<sup>({t('sectionNumber')})</sup>
         </h1>
         <div className={styles.cardsWrapper}>
           <a
@@ -39,6 +44,4 @@ const Page = () => {
       </div>
     </div>
   );
-};
-
-export default Page;
+}

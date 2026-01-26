@@ -1,6 +1,6 @@
 .workContainer {
   position: relative;
-  padding: 2em;
+  padding: 4.5em 2em 2em 2em;
   width: 100%;
   min-height: 100vh;
 }
@@ -22,6 +22,48 @@
   top: -10px;
   left: 5px;
   font-size: 1vw;
+}
+
+.filterSwitcher {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.filterBtn {
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  padding: 0.75em 1.5em;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filterBtn:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.filterBtn.active {
+  background: #fc6900;
+  border-color: #fc6900;
+  color: #000;
+}
+
+.projectSection {
+  margin-bottom: 3em;
+}
+
+.sectionTitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .projectsGrid {
@@ -47,8 +89,26 @@
 .projectImage {
   width: 100%;
   height: 180px;
-  object-fit: cover;
-  background: rgba(255, 255, 255, 0.1);
+  object-fit: contain;
+  object-position: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1em;
+}
+
+.projectImagePlaceholder {
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(135deg, rgba(252, 105, 0, 0.3) 0%, rgba(252, 105, 0, 0.1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectInitial {
+  font-size: 4rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
 }
 
 .projectContent {
@@ -87,9 +147,15 @@
   text-transform: none;
 }
 
-.githubLink {
-  display: inline-block;
+.projectLinks {
+  display: flex;
+  gap: 1em;
   margin-top: 1em;
+}
+
+.githubLink,
+.liveLink {
+  display: inline-block;
   color: #fff;
   font-size: 0.85rem;
   text-decoration: none;
@@ -98,14 +164,14 @@
   transition: opacity 0.2s ease;
 }
 
-.githubLink:hover {
+.githubLink:hover,
+.liveLink:hover {
   opacity: 1;
 }
 
 @media (max-width: 900px) {
   .workContainer {
-    height: 85vh;
-    padding: 1.5em;
+    padding: 4em 1.5em 1.5em 1.5em;
   }
 
   .workTitle {
@@ -114,6 +180,20 @@
 
   .workTitle sup {
     font-size: 3vw;
+  }
+
+  .filterSwitcher {
+    flex-wrap: wrap;
+    gap: 0.5em;
+  }
+
+  .filterBtn {
+    font-size: 0.8rem;
+    padding: 0.6em 1em;
+  }
+
+  .sectionTitle {
+    font-size: 0.9rem;
   }
 
   .projectsGrid {

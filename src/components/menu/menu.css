@@ -73,7 +73,8 @@
 .menu-link-item {
     width: max-content;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    padding-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 24px;
 }
 
 .menu-links {
@@ -87,7 +88,7 @@
 
 .menu-link-item-holder a {
     color: #000;
-    font-size: 80px;
+    font-size: 48px;
     font-weight: 400;
     letter-spacing: -0.02em;
     line-height: 85%;
@@ -104,6 +105,49 @@
     justify-content: flex-end;
 }
 
+/* Language Switcher Styles */
+.menu-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.lang-btn {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    padding: 0.3em 0.5em;
+    transition: color 0.2s ease;
+}
+
+.lang-btn:hover {
+    color: #fff;
+}
+
+.lang-btn.active {
+    color: #fff;
+}
+
+.lang-btn:disabled {
+    opacity: 0.5;
+    cursor: wait;
+}
+
+.lang-divider {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.85rem;
+}
+
 @media (max-width: 900px) {
     .menu-close-icon {
         display: none;
@@ -114,6 +158,14 @@
     }
 
     .menu-link-item-holder a {
-        font-size: 60px;
+        font-size: 36px;
+    }
+
+    .menu-bar-right {
+        gap: 1em;
+    }
+
+    .lang-btn {
+        font-size: 0.75rem;
     }
 }

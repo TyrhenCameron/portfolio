@@ -1,32 +1,35 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from 'react';
-import Link from "next/link";
+import { useTranslations, useLocale } from 'next-intl';
+import { Link } from '@/i18n/navigation';
+import LanguageSwitcher from './LanguageSwitcher';
 
 import "./menu.css";
 
 import { gsap } from 'gsap/gsap-core';
 import { useGSAP } from '@gsap/react';
 
-const menuLinks = [
-{path: "/", label: "Home"},
-{path: "/projects", label: "Projects"},
-{path: "/contact", label: "Contact"},
-];
-
 const Menu = () => {
+    const t = useTranslations('menu');
+    const locale = useLocale();
     const container = useRef();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const menuLinks = [
+        {path: "/", label: t('home')},
+        {path: "/projects", label: t('projects')},
+        {path: "/contact", label: t('contact')},
+    ];
 
     const tl = useRef();
 
     const toggleMenu = () => {
-
         setIsMenuOpen(!isMenuOpen)
     };
 
     useGSAP(() => {
-        gsap.set(".menu-link-item-holder", {y: 75});
+        gsap.set(".menu-link-item-holder", {y: 120});
 
     tl.current = gsap.timeline({paused: true}).to(".menu-overlay",
         {
@@ -57,19 +60,22 @@ useEffect(() => {
   <div className="menu-container" ref={container}>
     <div className="menu-bar">
         <div className="menu-logo">
-            <Link href="/">Tyrhen Cameron - Software / Cloud Engineer </Link>
+            <Link href="/">{t('title')}</Link>
         </div>
-    <div className="menu-open" onClick={toggleMenu}>
-        <p>Menu</p>
-    </div>
+        <div className="menu-bar-right">
+            <LanguageSwitcher />
+            <div className="menu-open" onClick={toggleMenu}>
+                <p>{t('menuButton')}</p>
+            </div>
+        </div>
     </div>
 <div className="menu-overlay">
     <div className="menu-overlay-bar">
     <div className="menu-logo">
-        <Link href="/">Tyrhen Cameron - Software / Cloud Engineer</Link>
+        <Link href="/">{t('title')}</Link>
     </div>
     <div className="menu-close" onClick={toggleMenu}>
-        <p>Close</p>
+        <p>{t('closeButton')}</p>
         </div>
     </div>
     <div className="menu-close-icon">
@@ -90,10 +96,10 @@ useEffect(() => {
     <div className="menu-info">
     <div className="menu-info-col">
     <div className="menu-info-col">
-        <p>Email: tyrhencameron@gmail.com</p>
+        <p>{t('email')}</p>
     </div>
-    <a href="https://www.linkedin.com/in/tyrhen-cameron/">LinkedIn &#8599;</a>
-    <a href="https://github.com/TyrhenCameron">GitHub &#8599;</a>
+    <a href="https://www.linkedin.com/in/tyrhen-cameron/">{t('linkedin')} &#8599;</a>
+    <a href="https://github.com/TyrhenCameron">{t('github')} &#8599;</a>
     </div>
     </div>
     </div>
