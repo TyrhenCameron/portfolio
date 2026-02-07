@@ -9,6 +9,7 @@
     "closeButton": "閉じる",
     "home": "ホーム",
     "projects": "プロジェクト",
+    "translations": "翻訳",
     "contact": "お問い合わせ",
     "email": "メール: tyrhencameron@gmail.com",
     "linkedin": "LinkedIn",
@@ -60,9 +61,37 @@
       }
     }
   },
+  "translations": {
+    "title": "翻訳",
+    "sectionNumber": "03",
+    "intro": "政府機関や学術機関向けの日英翻訳。公式声明、政策文書、教育コンテンツを専門としています。",
+    "viewTranslation": "翻訳を見る",
+    "types": {
+      "officialStatement": "公式声明",
+      "academic": "学術"
+    },
+    "items": {
+      "nptStatement": {
+        "title": "NPT再検討会議における市長声明",
+        "description": "長崎市長による第11回NPT再検討会議第1回準備委員会（ウィーン）での声明。核廃絶を訴え、原爆の実相を伝える内容。"
+      },
+      "subcriticalProtest": {
+        "title": "米国臨界前核実験への抗議",
+        "description": "ネバダ実験場での臨界前核実験に対する長崎市から米国大統領への正式な抗議文。核廃絶に向けたリーダーシップを求める。"
+      },
+      "russiaProtest": {
+        "title": "ロシアの核威嚇への抗議",
+        "description": "広島・長崎両市長からロシア大統領への共同抗議。ウクライナ侵攻と核兵器使用を示唆する発言に反対。"
+      },
+      "planetaryHealth": {
+        "title": "プラネタリーヘルスとは？",
+        "description": "長崎大学のプラネタリーヘルス概念を解説する教育コンテンツ。環境と人間の健康の相互関係を説明し、SDGsを超えたシステム思考を促進。"
+      }
+    }
+  },
   "contact": {
     "title": "お問い合わせ",
-    "sectionNumber": "03"
+    "sectionNumber": "04"
   },
   "about": {
     "title": "自己紹介",

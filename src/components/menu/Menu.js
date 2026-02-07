@@ -19,6 +19,7 @@ const Menu = () => {
     const menuLinks = [
         {path: "/", label: t('home')},
         {path: "/projects", label: t('projects')},
+        {path: "/translations", label: t('translations')},
         {path: "/contact", label: t('contact')},
     ];
 

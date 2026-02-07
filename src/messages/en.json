@@ -9,6 +9,7 @@
     "closeButton": "Close",
     "home": "Home",
     "projects": "Projects",
+    "translations": "Translations",
     "contact": "Contact",
     "email": "Email: tyrhencameron@gmail.com",
     "linkedin": "LinkedIn",
@@ -60,9 +61,37 @@
       }
     }
   },
+  "translations": {
+    "title": "Translations",
+    "sectionNumber": "03",
+    "intro": "Japanese to English translation work for government bodies and academic institutions, specializing in official statements, policy documents, and educational content.",
+    "viewTranslation": "View Translation",
+    "types": {
+      "officialStatement": "Official Statement",
+      "academic": "Academic"
+    },
+    "items": {
+      "nptStatement": {
+        "title": "Mayor's Statement at NPT Review Conference",
+        "description": "Statement by the Mayor of Nagasaki at the First Preparatory Committee for the 11th NPT Review Conference in Vienna, advocating for nuclear disarmament and sharing the realities of atomic bombings."
+      },
+      "subcriticalProtest": {
+        "title": "Protest Against U.S. Subcritical Nuclear Tests",
+        "description": "Formal protest letter from Nagasaki City to the U.S. President opposing subcritical nuclear tests conducted at Nevada's testing site, urging leadership toward nuclear abolition."
+      },
+      "russiaProtest": {
+        "title": "Protest Against Russia's Nuclear Threats",
+        "description": "Joint protest from the mayors of Hiroshima and Nagasaki to the Russian President opposing the invasion of Ukraine and rhetoric suggesting potential nuclear weapon deployment."
+      },
+      "planetaryHealth": {
+        "title": "What is Planetary Health?",
+        "description": "Educational content explaining Nagasaki University's Planetary Health concept—the interconnection between environmental and human health, encouraging systemic thinking beyond traditional SDG approaches."
+      }
+    }
+  },
   "contact": {
     "title": "Contact",
-    "sectionNumber": "03"
+    "sectionNumber": "04"
   },
   "about": {
     "title": "About",

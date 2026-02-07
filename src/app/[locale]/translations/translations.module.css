@@ -1,0 +1,156 @@
+.container {
+  position: relative;
+  padding: 4.5em 2em 2em 2em;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.pageTitle {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+  font-size: 3vw;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin-bottom: 0.5em;
+}
+
+.pageTitle sup {
+  position: relative;
+  top: -10px;
+  left: 5px;
+  font-size: 1vw;
+}
+
+.pageIntro {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  line-height: 1.6;
+  text-transform: none;
+  max-width: 600px;
+  margin-bottom: 2.5em;
+}
+
+.translationsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5em;
+}
+
+.translationCard {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.translationCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1.25em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.clientTag {
+  color: #fc6900;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.typeTag {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 0.3em 0.7em;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  text-transform: none;
+}
+
+.cardContent {
+  padding: 1.25em;
+}
+
+.projectTitle {
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 0.75em;
+  text-transform: none;
+  line-height: 1.4;
+}
+
+.projectDescription {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-transform: none;
+  margin-bottom: 1em;
+}
+
+.projectMeta {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.languagePair {
+  background: rgba(252, 105, 0, 0.2);
+  border: 1px solid rgba(252, 105, 0, 0.4);
+  color: #fc6900;
+  padding: 0.3em 0.7em;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.viewLink {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.85rem;
+  text-decoration: none;
+  text-transform: none;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.viewLink:hover {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 4em 1.5em 1.5em 1.5em;
+  }
+
+  .pageTitle {
+    font-size: 8vw;
+  }
+
+  .pageTitle sup {
+    font-size: 3vw;
+  }
+
+  .pageIntro {
+    font-size: 0.9rem;
+  }
+
+  .translationsGrid {
+    grid-template-columns: 1fr;
+  }
+}
