@@ -1,10 +1,10 @@
 {
   "metadata": {
     "title": "Profile Website",
-    "description": "Tyrhen Cameron - Translator / Software / Cloud Engineer"
+    "description": "Tyrhen Cameron - Linguist / Software Engineer"
   },
   "menu": {
-    "title": "Tyrhen Cameron - Translator / Software / Cloud Engineer",
+    "title": "Tyrhen Cameron - Linguist / Software Engineer",
     "menuButton": "Menu",
     "closeButton": "Close",
     "home": "Home",
@@ -17,7 +17,7 @@
   },
   "home": {
     "introName": "Tyrhen Cameron",
-    "introSubtitle": "Translator / Software / Cloud Engineer",
+    "introSubtitle": "Linguist / Software Engineer",
     "aboutTitle": "About me",
     "sectionNumber": "01",
     "bio": "Leveraging a background in Japanese linguistics to bring a unique perspective to crafting intuitive digital experiences.",
