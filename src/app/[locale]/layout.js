@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: messages.metadata?.title || "Profile Website",
-    description: messages.metadata?.description || "Tyrhen Cameron - Software / Cloud Engineer",
+    description: messages.metadata?.description || "Tyrhen Cameron - Translator / Software / Cloud Engineer",
   };
 }
 
